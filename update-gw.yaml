@@ -1,0 +1,21 @@
+---
+- hosts: k8snodes
+  become: yes
+  
+  tasks:
+  - name: update k8s nodes gateway
+    replace: 
+      dest: /etc/sysconfig/network-scripts/ifcfg-ens32 
+      regexp: 'GATEWAY=192.168.26.2' 
+      replace: 'GATEWAY=192.168.26.1'
+
+  - name: update k8s nodes DNS1
+    replace: 
+      dest: /etc/sysconfig/network-scripts/ifcfg-ens32
+      regexp: 'DNS1=192.168.26.2' 
+      replace: 'DNS1=192.168.26.1'
+
+  - name: restart network
+    service:
+      name: network
+      state: restarted

@@ -1,0 +1,10 @@
+[k8snodes]
+192.168.26.20 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.21 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.22 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.23 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.24 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.25 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.26 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.28 ansible_ssh_user=tom ansible_ssh_pass=redhat
+192.168.26.29 ansible_ssh_user=tom ansible_ssh_pass=redhat
