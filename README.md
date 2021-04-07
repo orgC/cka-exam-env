@@ -19,4 +19,10 @@ make install
 # 测试ansible hosts
 ```
 ansible -i hosts -m ping all 
+
+```
+
+# 更新网络配置
+```
+ansible-playbook -i hosts update-gw.yaml
 ```
